@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link icon-tab -->
+    <link rel="icon" href="">
+    <!-- Link font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link main css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="container text-center">
+        <div class="formGroup m-auto p-5 rounded ">
+            <div>
+                <h1 class="mb-3">Smart Login System</h1>
+            </div>
+            <div class="input-group mb-3">
+                <input oninput="validsignName()" id="name" type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="input-group mb-3">
+                <input oninput="validsignEmail()" id="email" type="text" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="input-group mb-4">
+                <input oninput="validsignPass()" id="pass" type="password" class="form-control" placeholder="Enter password">
+            </div>
+            <div class="d-grid mb-2 w-100">
+                <label id="SignNotSuccess" class="mb-4 text-danger d-none">All inputs is required</label>
+                <label id="SignSuccess" class="mb-4 text-success d-none">Success</label>
+                <label id="existing" class="mb-4 text-danger d-none">The previously existing user account</label>
+                <button id="cli" onclick="addDataUser()" class="btn my-2 border border-1 " type="button">Sign Up</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="text-white me-1">You have an account?</p>
+                <a class="text-white" href="index.html">Signin</a>
+            </div>
+        </div>
+    </section>
+    <!-- Link sweetaler -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Link main js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

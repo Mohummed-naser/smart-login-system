@@ -57,7 +57,7 @@ function validsignName() {
 }
 //input02
 function validsignEmail() {
-    var rege = /^[A-Za-z0-9]{1,20}[@][A-Za-z]{1,9}[.][A-Za-z]{1,9}$/
+    var rege = /^[A-Za-z0-9\s]{1,20}[A-Za-z0-9\s]{0,20}[@][A-Za-z]{1,9}[.][A-Za-z]{1,9}$/
     if(rege.test(signEmail.value)) {
         signEmail.classList.add('is-valid')
         signEmail.classList.remove('is-invalid')

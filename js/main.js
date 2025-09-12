@@ -51,7 +51,7 @@ function validsignName() {
     }else {
         signName.classList.remove('is-valid')
         signName.classList.add('is-invalid')
-        alertSingOne.classList.remove('d-none')
+        // alertSingOne.classList.remove('d-none')
         return false
     }
 }

@@ -43,7 +43,7 @@ function addDataUser() {
 }
 //functionForValidation
 function validsignName() {
-    var regex = /^[A-Za-z]{1,20}$/
+    var regex = /^[A-Za-z\s]{1,20}[A-Za-z\s]{1,20}[A-Za-z]{0,20}$/
     if(regex.test(signName.value)) {
         signName.classList.add('is-valid')
         signName.classList.remove('is-invalid')
